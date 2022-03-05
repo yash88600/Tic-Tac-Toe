@@ -1,0 +1,130 @@
+*, *::before, *::after
+{
+    box-sizing: border-box;
+}
+body,html
+{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  background-color: bisque;
+}
+
+.frontpage
+{
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.frontpage.hide
+{
+    display: none;
+}
+
+.title, .future
+{
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+}
+
+.startbutton
+{
+    display: flex;
+    gap: 20px;
+}
+
+.player, .ai
+{
+    width: 100px;
+    height: 40px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 0px;
+    box-shadow: 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+.player:hover, .ai:hover
+{
+    background-color: black;
+    color: white;
+}
+
+.main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gameboard
+{
+    margin: 100px;
+    display: grid;
+    width: 390px;
+    height: 390px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+.one, .two, .four, .five
+{
+    border-right: 5px solid grey;
+    border-bottom: 5px solid grey;
+}
+
+.three, .six
+{
+    border-bottom: 5px solid grey;
+}
+
+.seven, .eight
+{
+    border-right: 5px solid grey;
+}
+
+/* .block::before, .block:hover
+{
+    color: rgba(230, 217, 217, 0.9);
+} */
+
+.block
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6em;
+    font-weight: bolder;
+}
+
+.result
+{
+    font-size: 60px;
+    font-weight: bolder;
+    height: 50px;
+}
+
+.Button
+{
+    width: 100px;
+    height: 50px;
+    background-color: aqua;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mainpagebutton
+{
+    display: flex;
+    gap: 50px;
+}
